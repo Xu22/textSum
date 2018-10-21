@@ -13,9 +13,6 @@ from datetime import datetime
 from django.views.decorators.csrf import csrf_exempt
 
 def index(request):
-    # username=request.COOKIES.get('username','')
-    # blog_list = BlogsPost.objects.all()  # 获取所有数据
-    # return render_to_response('index.html',{'username':username,'blog_list':blog_list,'form':BlogsPostForm()})
     return render_to_response('index.html')
 
 def CalcSummary(request):
